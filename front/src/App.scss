@@ -2,11 +2,15 @@
   .app-section {
     width: 100%;
     aspect-ratio: 2;
+    padding-top: 28px;
   }
 
   .btn-classic {
     background-color: #474747;
     color: white;
     font-size: 1.5vw;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
