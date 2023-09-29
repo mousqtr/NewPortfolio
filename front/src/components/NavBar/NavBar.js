@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { RiComputerLine } from "react-icons/ri";
 import "./NavBar.scss";
 
 function NavBar() {
@@ -9,7 +10,9 @@ function NavBar() {
     <div id="navBar">
       <Navbar collapseOnSelect expand="lg">
         <Container>
-          <Navbar.Brand href="#home">Benbrikho Consulting</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <RiComputerLine />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -18,7 +21,9 @@ function NavBar() {
               <Nav.Link href="#formation">Formation</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#contact" className="btn-classic">
+                Contact
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
