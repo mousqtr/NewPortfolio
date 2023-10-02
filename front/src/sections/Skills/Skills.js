@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import "./Skills.scss";
 
@@ -22,15 +22,17 @@ const libraries = [
 ];
 
 function Skills() {
-  const languagePage = useState(1);
-  const libraryPage = useState(1);
+  const [languagePage, setLanguagePage] = useState(1);
+  const [libraryPage, setLibraryPage] = useState(1);
 
-  const [displayedLanguages, setDisplayLanguages] = useState(
-    languages.slice(0, 3),
-  );
-  const [displayedLibraries, setDisplayLibraries] = useState(
-    libraries.slice(0, 3),
-  );
+  const displayedLanguages = useMemo(() => {
+    return languages.slice(0, languagePage * 3);
+  }, [languagePage]);
+
+  const displayedLibraries = useMemo(() => {
+    return libraries.slice(0, libraryPage * 3);
+  }, [libraryPage]);
+
   return (
     <div id="skills" className="app-section">
       <div className="block">
@@ -38,7 +40,11 @@ function Skills() {
         <div className="cols">
           <AiOutlineLeft />
           {displayedLanguages.map((language, index) => {
-            return <div className="column">{language.label}</div>;
+            return (
+              <div key={index} className="column">
+                {language.label}
+              </div>
+            );
           })}
           <AiOutlineRight />
         </div>
@@ -48,7 +54,11 @@ function Skills() {
         <div className="cols">
           <AiOutlineLeft />
           {displayedLibraries.map((library, index) => {
-            return <div className="column">{library.label}</div>;
+            return (
+              <div key={index} className="column">
+                {library.label}
+              </div>
+            );
           })}
           <AiOutlineRight />
         </div>
