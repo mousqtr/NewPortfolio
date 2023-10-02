@@ -22,6 +22,10 @@
       padding-left: 10px;
       padding-right: 10px;
 
+      @media (max-width: 992px) {
+        margin-bottom: 5px;
+      }
+
       &:hover {
         background: rgba(255, 255, 255, 0.1);
       }

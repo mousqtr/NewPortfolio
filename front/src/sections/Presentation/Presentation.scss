@@ -1,10 +1,24 @@
 #presentation {
   background-color: #f9f3e9;
   display: flex;
-  flex-direction: row;
+  padding-bottom: 56px;
+
+  @media (max-width: 992px) {
+    padding-top: 90px;
+    flex-direction: column;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 56px;
+    flex-direction: row;
+  }
 
   .block {
     height: 100%;
+
+    @media (max-width: 992px) {
+      width: 100% !important;
+    }
   }
 
   .block-left {
@@ -17,21 +31,15 @@
     .presentation-text {
       width: 80%;
       height: 80%;
-      h1 {
-        font-size: 3.5vw;
-        margin-bottom: 1.5vw;
-      }
+
       h2 {
-        font-size: 2vw;
         color: #919191;
-        margin-bottom: 2.5vw;
         font-weight: bold;
       }
-      p {
-        font-size: 1.5vw;
-        margin-bottom: 2.5vw;
-      }
+
       button {
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -42,6 +50,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 992px) {
+      height: 220px;
+    }
 
     svg {
       path {
