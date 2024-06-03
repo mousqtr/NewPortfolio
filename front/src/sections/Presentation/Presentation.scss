@@ -1,64 +1,82 @@
 #presentation {
-  background-color: #f9f3e9;
-  display: flex;
-  padding-bottom: 56px;
-
-  @media (max-width: 992px) {
-    padding-top: 90px;
-    flex-direction: column;
-  }
-
-  @media (min-width: 992px) {
-    padding-top: 56px;
-    flex-direction: row;
-  }
-
-  .block {
-    height: 100%;
+  .main-block {
+    background-color: #474747;
+    display: flex;
+    padding: 20px;
+    border-radius: 11px;
+    background-image: url("https://images.unsplash.com/photo-1716887616455-392d1ca285f1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 
     @media (max-width: 992px) {
-      width: 100% !important;
+      margin-top: calc(51px + 10px);
+      flex-direction: column;
     }
-  }
 
-  .block-left {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @media (min-width: 992px) {
+      margin-top: calc(56px + 10px);
+      flex-direction: row;
+    }
 
-    .presentation-text {
-      width: 80%;
-      height: 80%;
+    .sub-block {
+      height: 100%;
 
-      h2 {
-        color: #919191;
-        font-weight: bold;
-      }
-
-      button {
-        margin-top: 10px;
-        margin-bottom: 10px;
+      @media (max-width: 992px) {
+        width: 100% !important;
       }
     }
-  }
 
-  .block-right {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .block-left {
+      width: 70%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    @media (max-width: 992px) {
-      height: 220px;
+      .presentation-text {
+        width: 90%;
+        height: 80%;
+        color: white;
+
+        h1 {
+          font-weight: bold;
+          color: white;
+        }
+
+        h2 {
+          font-weight: bold;
+          color: white;
+        }
+
+        p {
+          color: white;
+        }
+
+        button {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          background-color: white;
+          color: black;
+          border-radius: 1.75rem;
+        }
+      }
     }
 
-    svg {
-      path {
-        transform: scale(1.18) translate(96px, 100px);
-        transform-origin: center center;
+    .block-right {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 992px) {
+        height: 220px;
+      }
+
+      svg {
+        path {
+          transform: scale(1.18) translate(96px, 100px);
+          transform-origin: center center;
+        }
       }
     }
   }
