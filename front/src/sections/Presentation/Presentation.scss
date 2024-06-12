@@ -1,16 +1,18 @@
 #presentation {
   .main-block {
-    background-color: #474747;
+    background-color: #f6f6f6;
+    color: black;
     display: flex;
     border-radius: 11px;
-    background-image: url("https://images.unsplash.com/photo-1716887616455-392d1ca285f1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    position: relative;
+    // background-image: url("https://images.unsplash.com/photo-1716887616455-392d1ca285f1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 
-    @media (max-width: 992px) {
+    @media (max-width: 720px) {
       margin-top: calc(51px + 10px);
       flex-direction: column;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 720px) {
       margin-top: calc(56px + 10px);
       flex-direction: row;
     }
@@ -18,7 +20,7 @@
     .sub-block {
       height: 100%;
 
-      @media (max-width: 992px) {
+      @media (max-width: 720px) {
         width: 100% !important;
       }
     }
@@ -33,29 +35,28 @@
       padding: 20px;
 
       .presentation-text {
-        width: 90%;
+        width: 300px;
         height: 80%;
-        color: white;
 
         h1 {
+          font-size: 50px;
           font-weight: bold;
-          color: white;
+          margin-bottom: 5px;
         }
 
         h2 {
+          font-size: 18px;
           font-weight: bold;
-          color: white;
+          margin-bottom: 10px;
         }
 
         p {
-          color: white;
+          font-size: 16px;
+          margin-bottom: 10px;
         }
 
         button {
-          margin-top: 10px;
-          margin-bottom: 10px;
-          background-color: white;
-          color: black;
+          margin-bottom: 30px;
           border-radius: 1.75rem;
         }
       }
@@ -63,13 +64,13 @@
 
     .block-right {
       width: 30%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
 
-      @media (max-width: 992px) {
+      @media (max-width: 720px) {
         height: 220px;
       }
 
@@ -84,7 +85,8 @@
         position: absolute;
         bottom: 0;
         height: 300px;
-        @media (max-width: 992px) {
+        max-height: 100%;
+        @media (max-width: 720px) {
           height: 250px;
         }
       }

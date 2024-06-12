@@ -1,0 +1,14 @@
+#aboutMe {
+  .main-block {
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    border-radius: 11px;
+    margin-top: 20px;
+    padding: 20px;
+
+    h1 {
+      font-weight: bold;
+    }
+  }
+}
