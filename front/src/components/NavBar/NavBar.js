@@ -11,7 +11,7 @@ function NavBar() {
       <Navbar collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand href="#home">
-            <RiComputerLine />
+            <img src="/img/codinplace.png" alt="logo-image" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -21,9 +21,7 @@ function NavBar() {
               <Nav.Link href="#formation">Formation</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#contact" className="btn-classic">
-                Contact
-              </Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
