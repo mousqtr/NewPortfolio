@@ -1,14 +1,58 @@
 #aboutMe {
   .main-block {
-    background-color: lightgray;
     color: black;
     display: flex;
-    border-radius: 11px;
     margin-top: 20px;
-    padding: 20px;
 
-    h1 {
-      font-weight: bold;
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
+
+    @media (min-width: 720px) {
+      flex-direction: row;
+    }
+
+    .sub-block {
+      @media (max-width: 720px) {
+        width: 100% !important;
+      }
+    }
+
+    .block-left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+
+      @media (max-width: 720px) {
+        justify-content: center;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 11px;
+
+        @media (min-width: 720px) {
+          max-height: 300px;
+        }
+      }
+    }
+
+    .block-right {
+      width: 50%;
+      padding: 20px;
+      border-radius: 11px;
+      height: auto;
+
+      h1 {
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+      }
     }
   }
 }

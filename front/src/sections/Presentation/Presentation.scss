@@ -8,12 +8,12 @@
     // background-image: url("https://images.unsplash.com/photo-1716887616455-392d1ca285f1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 
     @media (max-width: 720px) {
-      margin-top: calc(51px + 10px);
+      margin-top: calc(61px + 10px);
       flex-direction: column;
     }
 
     @media (min-width: 720px) {
-      margin-top: calc(56px + 10px);
+      margin-top: calc(66px + 10px);
       flex-direction: row;
     }
 
@@ -26,7 +26,8 @@
     }
 
     .block-left {
-      width: 60%;
+      width: 50%;
+      margin-left: 5%;
       height: auto;
       display: flex;
       flex-direction: column;
