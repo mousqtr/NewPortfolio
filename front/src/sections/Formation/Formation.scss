@@ -1,3 +1,50 @@
 #formation {
-  background-color: #fdfcfb;
+  .main-block {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    h1 {
+      width: 100%;
+      font-weight: bold;
+    }
+
+    ul {
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        float: left;
+
+        &:nth-child(3n-1) {
+          @media (min-width: 720px) {
+            margin-left: 5%;
+            margin-right: 5%;
+          }
+        }
+
+        @media (min-width: 720px) {
+          width: calc(90% / 3);
+        }
+
+        @media (max-width: 720px) {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 11px;
+          margin-bottom: 10px;
+        }
+
+        h2 {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }
