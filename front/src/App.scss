@@ -12,6 +12,7 @@
   .btn-dark {
     background-color: #241e1f;
     color: white;
+    font-weight: bold;
 
     &:hover {
       opacity: 0.6;
@@ -56,7 +57,7 @@
       font-size: 12px;
     }
     @media (min-width: 992px) {
-      font-size: 1vw;
+      font-size: 14px;
     }
   }
 }

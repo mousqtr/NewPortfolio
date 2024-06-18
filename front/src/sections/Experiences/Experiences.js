@@ -1,7 +1,4 @@
-import {
-  TECHNOLOGIES,
-  TECHNOLOGIES_BY_FIELD,
-} from "../../constants/technologies";
+import { TECHNOLOGIES_BY_FIELD } from "../../constants/technologies";
 import "./Experiences.scss";
 
 const data = [
