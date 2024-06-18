@@ -8,6 +8,7 @@
     h1 {
       width: 100%;
       font-weight: bold;
+      margin-bottom: 0;
     }
 
     .projects-block {
@@ -24,17 +25,16 @@
 
         &:nth-child(2n - 1) {
           @media (min-width: 720px) {
-            margin-right: 5%;
+            margin-right: 3%;
           }
         }
 
         @media (max-width: 720px) {
           width: 100%;
-          height: 300px;
         }
 
         @media (min-width: 720px) {
-          width: calc(95% / 2);
+          width: calc(97% / 2);
         }
 
         h1 {

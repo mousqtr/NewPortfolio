@@ -45,6 +45,7 @@ function Experiences() {
     <div id="experiences" className="app-section">
       <div className="main-block">
         <h1>Expériences professionnelles</h1>
+        <h5>Missions réalisées dans le cadre d'un contexte professionel</h5>
         {data
           .sort((a, b) => a.order - b.order)
           .map((elt, index) => (

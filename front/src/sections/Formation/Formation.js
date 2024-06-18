@@ -36,6 +36,7 @@ function Formation() {
     <div id="formation" className="app-section">
       <div className="main-block">
         <h1>Formation</h1>
+        <h5>Parcours dans l'enseignement secondaire et supérieur</h5>
         <ul>
           {data.map((formation, index) => (
             <li key={index}>

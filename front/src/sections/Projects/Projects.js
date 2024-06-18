@@ -43,6 +43,7 @@ function Projects() {
     <div id="projects" className="app-section">
       <div className="main-block">
         <h1>Projects</h1>
+        <h5>Liste de projets personnels ou collectifs</h5>
         <div className="projects-block">
           {data
             .sort((a, b) => a.order - b.order)

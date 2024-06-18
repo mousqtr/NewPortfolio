@@ -3,7 +3,7 @@ import { TECHNOLOGIES, TECHNOLOGIES_LIST } from "../../constants/technologies";
 import "./Skills.scss";
 
 const data = {
-  languages: ["html", "css", "javascript", "python"],
+  languages: ["html", "css", "javascript", "python", "cplusplus"],
   libraries: ["react_js", "angular"],
   databases: ["mongodb"],
   tools: ["vscode"],
@@ -21,6 +21,9 @@ function Skills() {
     <div id="skills" className="app-section">
       <div className="main-block">
         <h1>Boite à outils</h1>
+        <h5>
+          Technologies fréquemment utilisées (triées par niveau de maîtrise)
+        </h5>
         {Object.keys(parts).map((id) => (
           <div key={id} className="sub-block">
             <h2>{parts[id].title}</h2>

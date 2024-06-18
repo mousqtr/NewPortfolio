@@ -5,6 +5,7 @@ export const TECHNOLOGIES = {
     javascript: { label: "Javascript", logo: "react.png", bgColor: "#ffc604" },
     php: { label: "PHP", logo: "react.png", bgColor: "orange" },
     python: { label: "Python", logo: "react.png", bgColor: "#7171fd" },
+    cplusplus: { label: "C++", logo: "react.png", bgColor: "blue" },
   },
   libraries: {
     react_js: { label: "React.js", logo: "react.png", bgColor: "orange" },
