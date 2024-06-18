@@ -1,28 +1,6 @@
 import { useState, useMemo } from "react";
+import { TECHNOLOGIES, TECHNOLOGIES_LIST } from "../../constants/technologies";
 import "./Skills.scss";
-
-const dictionnary = {
-  languages: {
-    html: { label: "Javascript", logo: "react.png" },
-    css: { label: "CSS", logo: "react.png" },
-    javascript: { label: "Javascript", logo: "react.png" },
-    php: { label: "PHP", logo: "react.png" },
-    python: { label: "Python", logo: "react.png" },
-  },
-  libraries: {
-    react_js: { label: "React.js", logo: "react.png" },
-    angular: { label: "Angular", logo: "react.png" },
-    node_js: { label: "Node.js", logo: "react.png" },
-  },
-  databases: {
-    mongodb: { label: "MongoDB", logo: "react.png" },
-    postgresql: { label: "PostgreSQL", logo: "react.png" },
-    mysql: { label: "MySQL", logo: "react.png" },
-  },
-  tools: {
-    vscode: { label: "Visual Studio Code", logo: "react.png" },
-  },
-};
 
 const data = {
   languages: ["html", "css", "javascript", "python"],
@@ -51,10 +29,10 @@ function Skills() {
                 <li key={elt}>
                   <img
                     src={`/img/skills/libraries/react.png`}
-                    // src={`/img/skills/${id}/${dictionnary[id][elt].logo}`}
+                    // src={`/img/skills/${id}/${TECHNOLOGIES[id][elt].logo}`}
                     alt="profile-image"
                   />
-                  <div className="elt-title">{dictionnary[id][elt].label}</div>
+                  <div className="elt-title">{TECHNOLOGIES[id][elt].label}</div>
                 </li>
               ))}
             </ul>

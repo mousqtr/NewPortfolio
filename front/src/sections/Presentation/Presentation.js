@@ -20,7 +20,7 @@ function Presentation() {
               transform="translate(100 100)"
             />
           </svg>
-          {/* <img src="/img/profile.png" alt="profile-image" /> */}
+          <img src="/img/profile.png" alt="profile-image" />
         </div>
       </div>
     </div>
