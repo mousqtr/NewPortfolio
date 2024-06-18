@@ -21,7 +21,10 @@ function NavBar() {
               <Nav.Link href="#formation">Formation</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link>Français</Nav.Link>
+              <Nav.Link href="#contact" className="btn-dark">
+                Contact
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
