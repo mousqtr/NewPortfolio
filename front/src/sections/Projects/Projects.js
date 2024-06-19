@@ -51,8 +51,9 @@ function Projects() {
               <div key={index} className="sub-block">
                 <h2>{elt.title}</h2>
                 <div className="tags">
-                  {elt.tags.map((tag) => (
+                  {elt.tags.map((tag, indexTag) => (
                     <div
+                      key={indexTag}
                       className="tag"
                       style={{
                         backgroundColor: TECHNOLOGIES_BY_FIELD[tag].bgColor,
