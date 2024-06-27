@@ -10,11 +10,13 @@ export default function AboutMe() {
         <div className="sub-block block-right">
           <h1>A propos de moi</h1>
           <p>
-            Le Lorem Ipsum est simplement du faux texte employé dans la
-            composition et la mise en page avant impression. Le Lorem Ipsum est
-            le faux texte standard de l'imprimerie depuis les années 1500, quand
-            un imprimeur anonyme assembla ensemble des morceaux de texte pour
-            réaliser un livre spécimen de polices de texte.
+            Je suis Mustapha BENBRIKHO, développeur Full Stack passionné par
+            l'informatique et la création de projets innovants. J'aime coder sur
+            mon temps libre, que ce soit en solo ou en équipe, et je suis
+            particulièrement intéressé par l'architecture et l'infrastructure
+            des projets. Mon expertise couvre le développement frontend et
+            backend, et je suis toujours enthousiaste à l'idée de relever de
+            nouveaux défis.
           </p>
         </div>
       </div>

@@ -12,7 +12,17 @@ const data = [
     dateTo: "",
     city: "Paris",
     country: "France",
-    tags: ["html", "css", "javascript", "php", "python", "java"],
+    tags: [
+      "angular",
+      "symfony",
+      "zend_framework",
+      "html",
+      "css",
+      "javascript",
+      "php",
+      "python",
+      "java",
+    ],
     description: `- Evolution et maintenance de l’application de référencement et de configuration de tous les équipements SFR en France (équipe de 16 pers)
     - Migration de l'application (Zend 2/jQuery vers Symfony/Angular)
     - Développement d'un module en React.js

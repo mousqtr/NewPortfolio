@@ -4,8 +4,8 @@ import "./Skills.scss";
 
 const data = {
   languages: ["html", "css", "javascript", "php", "python", "cplusplus"],
-  libraries: ["react_js", "angular", "node_js", "zend"],
-  databases: ["mongodb", "postgresql"],
+  libraries: ["react_js", "angular", "node_js", "symfony", "zend_framework"],
+  databases: ["mongodb", "postgresql", "mysql"],
   tools: ["vscode"],
 };
 
@@ -34,7 +34,12 @@ function Skills() {
                     src={`/img/skills/${id}/${TECHNOLOGIES[id][elt].logo}`}
                     alt="profile-image"
                   />
-                  <div className="elt-title">{TECHNOLOGIES[id][elt].label}</div>
+                  <div
+                    className="elt-title"
+                    style={{ color: TECHNOLOGIES[id][elt].bgColor }}
+                  >
+                    {TECHNOLOGIES[id][elt].label}
+                  </div>
                 </li>
               ))}
             </ul>

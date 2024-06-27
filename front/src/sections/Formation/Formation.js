@@ -6,39 +6,28 @@ const data = [
     image: "/img/formation/cpe.jpg",
     title: "CPE Lyon",
     type: "Ecole d'ingénieur",
-    dateFrom: "06/2019",
-    dateTo: "08/2019",
-    description: `Ecole d'ingénieur en Science du Numérique.`,
+    dateFrom: "Sept 2017",
+    dateTo: "Juil 2020",
+    description: `Ecole d'Ingénieur en Science du Numérique. 
+    Diplôme obtenu au sein de la filière Traitement d'image et Modélisation 3D`,
   },
   {
     order: 2,
     image: "/img/formation/charlemagne.jpg",
     title: "Lycée Charlemagne",
     type: "Classes préparatoires",
-    dateFrom: "06/2019",
-    dateTo: "08/2019",
-    description: `Le Lorem Ipsum est simplement du faux texte employé dans la
-    composition et la mise en page avant impression.`,
+    dateFrom: "Sept 2014",
+    dateTo: "Juil 2017",
+    description: `Classes préparatoires scientifique option Physique-Chimie`,
   },
   {
     order: 2,
     image: "/img/formation/henri.jpg",
     title: "Lycée Henri IV",
     type: "Etudes secondaires",
-    dateFrom: "06/2019",
-    dateTo: "08/2019",
-    description: `Le Lorem Ipsum est simplement du faux texte employé dans la
-    composition et la mise en page avant impression.`,
-  },
-  {
-    order: 2,
-    image: "/img/formation/descartes.jpg",
-    title: "Collège René Descartes",
-    type: "Collège",
-    dateFrom: "06/2019",
-    dateTo: "08/2019",
-    description: `Le Lorem Ipsum est simplement du faux texte employé dans la
-    composition et la mise en page avant impression.`,
+    dateFrom: "Sept 2011",
+    dateTo: "Juil 2014",
+    description: `Baccalauréat scientifique option Physique-Chimie`,
   },
 ];
 
@@ -51,8 +40,12 @@ function Formation() {
         <ul>
           {data.map((formation, index) => (
             <li key={index}>
+              <h4>{formation.type}</h4>
               <img src={formation.image} alt="formation-image" />
               <h2>{formation.title}</h2>
+              <h5>
+                {formation.dateFrom} - {formation.dateTo}
+              </h5>
               <p>{formation.description}</p>
             </li>
           ))}
