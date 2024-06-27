@@ -3,29 +3,40 @@ import "./Formation.scss";
 const data = [
   {
     order: 1,
-    image: "/img/about.jpg",
-    title: "Lycée Henri IV",
+    image: "/img/formation/cpe.jpg",
+    title: "CPE Lyon",
+    type: "Ecole d'ingénieur",
+    dateFrom: "06/2019",
+    dateTo: "08/2019",
+    description: `Ecole d'ingénieur en Science du Numérique.`,
+  },
+  {
+    order: 2,
+    image: "/img/formation/charlemagne.jpg",
+    title: "Lycée Charlemagne",
+    type: "Classes préparatoires",
+    dateFrom: "06/2019",
+    dateTo: "08/2019",
     description: `Le Lorem Ipsum est simplement du faux texte employé dans la
     composition et la mise en page avant impression.`,
   },
   {
     order: 2,
-    image: "/img/about.jpg",
+    image: "/img/formation/henri.jpg",
     title: "Lycée Henri IV",
+    type: "Etudes secondaires",
+    dateFrom: "06/2019",
+    dateTo: "08/2019",
     description: `Le Lorem Ipsum est simplement du faux texte employé dans la
     composition et la mise en page avant impression.`,
   },
   {
     order: 2,
-    image: "/img/about.jpg",
-    title: "Lycée Henri IV",
-    description: `Le Lorem Ipsum est simplement du faux texte employé dans la
-    composition et la mise en page avant impression.`,
-  },
-  {
-    order: 2,
-    image: "/img/about.jpg",
-    title: "Lycée Henri IV",
+    image: "/img/formation/descartes.jpg",
+    title: "Collège René Descartes",
+    type: "Collège",
+    dateFrom: "06/2019",
+    dateTo: "08/2019",
     description: `Le Lorem Ipsum est simplement du faux texte employé dans la
     composition et la mise en page avant impression.`,
   },

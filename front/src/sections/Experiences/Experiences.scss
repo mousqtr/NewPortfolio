@@ -18,6 +18,7 @@
 
       @media (max-width: 720px) {
         flex-direction: column;
+        margin-bottom: 50px;
       }
 
       @media (min-width: 720px) {
@@ -29,7 +30,8 @@
         height: auto;
 
         @media (max-width: 720px) {
-          width: 100%;
+          width: 250px;
+          margin-left: calc(50% - 250px / 2);
           margin-bottom: 10px;
         }
 
@@ -62,12 +64,21 @@
           margin-bottom: 10px;
         }
 
+        h3 {
+          font-size: 14px;
+          margin-bottom: 4px;
+          color: grey;
+          font-weight: normal;
+        }
+
         p {
           font-size: 16px;
+          margin-bottom: 0;
         }
 
         .tags {
           width: 100%;
+          margin-top: 8px;
           margin-bottom: 10px;
 
           .tag {

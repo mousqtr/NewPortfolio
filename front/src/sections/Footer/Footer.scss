@@ -8,6 +8,11 @@
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 720px) {
+    height: 200px;
+    margin-top: 0px;
+  }
+
   .container {
     display: flex;
     align-items: center;
@@ -27,6 +32,10 @@
 
       &:hover {
         color: darkgrey;
+      }
+
+      @media (max-width: 720px) {
+        margin: 0px;
       }
     }
   }

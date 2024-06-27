@@ -3,9 +3,9 @@ import { TECHNOLOGIES, TECHNOLOGIES_LIST } from "../../constants/technologies";
 import "./Skills.scss";
 
 const data = {
-  languages: ["html", "css", "javascript", "python", "cplusplus"],
-  libraries: ["react_js", "angular"],
-  databases: ["mongodb"],
+  languages: ["html", "css", "javascript", "php", "python", "cplusplus"],
+  libraries: ["react_js", "angular", "node_js", "zend"],
+  databases: ["mongodb", "postgresql"],
   tools: ["vscode"],
 };
 
@@ -31,8 +31,7 @@ function Skills() {
               {data[id].map((elt) => (
                 <li key={elt}>
                   <img
-                    src={`/img/skills/libraries/react.png`}
-                    // src={`/img/skills/${id}/${TECHNOLOGIES[id][elt].logo}`}
+                    src={`/img/skills/${id}/${TECHNOLOGIES[id][elt].logo}`}
                     alt="profile-image"
                   />
                   <div className="elt-title">{TECHNOLOGIES[id][elt].label}</div>

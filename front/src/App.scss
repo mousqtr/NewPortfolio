@@ -7,6 +7,10 @@
     padding-left: 24px;
     padding-right: 24px;
     overflow: hidden;
+
+    @media (max-width: 720px) {
+      margin-bottom: 20px;
+    }
   }
 
   .btn-dark {

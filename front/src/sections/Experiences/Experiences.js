@@ -1,42 +1,58 @@
+import React from "react";
 import { TECHNOLOGIES_BY_FIELD } from "../../constants/technologies";
 import "./Experiences.scss";
 
 const data = [
   {
     order: 1,
-    image: "/img/about.jpg",
-    title: "Développeur Full Stack chez SFR",
-    tags: ["html", "css", "javascript", "python"],
-    description: `Le Lorem Ipsum est simplement du faux texte employé dans la
-    composition et la mise en page avant impression. Le Lorem
-    Ipsum est le faux texte standard de l'imprimerie depuis les
-    années 1500, quand un imprimeur anonyme assembla ensemble des
-    morceaux de texte pour réaliser un livre spécimen de polices
-    de texte.`,
+    image: "/img/experiences/sfr.png",
+    title: "Ingénieur Développeur Full Stack",
+    company: "SFR",
+    dateFrom: "03/2021",
+    dateTo: "",
+    city: "Paris",
+    country: "France",
+    tags: ["html", "css", "javascript", "php", "python", "java"],
+    description: `- Evolution et maintenance de l’application de référencement et de configuration de tous les équipements SFR en France (équipe de 16 pers)
+    - Migration de l'application (Zend 2/jQuery vers Symfony/Angular)
+    - Développement d'un module en React.js
+    - Collaboration avec plusieurs acteurs Réseau (Ingénierie, Outils, Production, Exploitation ..) 
+    - Tests unitaires et fonctionnels
+    - Contrôle de qualité du code (SonarQube, Revue de code)
+    - Documentation technique et fonctionnelle (architecture, formations, mode d'emploi, ...)
+    - Formation et accompagnement des nouveaux développeurs`,
   },
   {
     order: 1,
-    image: "/img/about.jpg",
-    title: "Développeur Full Stack chez SFR",
-    tags: ["html", "css", "javascript"],
-    description: `Le Lorem Ipsum est simplement du faux texte employé dans la
-    composition et la mise en page avant impression. Le Lorem
-    Ipsum est le faux texte standard de l'imprimerie depuis les
-    années 1500, quand un imprimeur anonyme assembla ensemble des
-    morceaux de texte pour réaliser un livre spécimen de polices
-    de texte.`,
+    image: "/img/experiences/barco.png",
+    title: "Ingénieur Développeur C++",
+    company: "Barco",
+    dateFrom: "03/2020",
+    dateTo: "08/2020",
+    city: "Courtrai",
+    country: "Belgique",
+    tags: ["cplusplus"],
+    description: `- Améliorer le pipeline graphique des écrans médicaux (C++ / Visual Studio)
+    - Créer des bibliothèques de synthèses d’images en C++ à l’aide des API 
+    graphiques Vulkan, OpenGL et Direct3D
+    - Coder les fragments shaders de traitement d’image (GLSL / HLSL)
+    - Élaborer les tests unitaires afin de vérifier la fiabilité du programme
+    - Optimiser les performances du programme 
+    - Rédiger les spécifications techniques`,
   },
   {
     order: 1,
-    image: "/img/about.jpg",
-    title: "Développeur Full Stack chez SFR",
-    tags: ["html", "css", "javascript"],
-    description: `Le Lorem Ipsum est simplement du faux texte employé dans la
-    composition et la mise en page avant impression. Le Lorem
-    Ipsum est le faux texte standard de l'imprimerie depuis les
-    années 1500, quand un imprimeur anonyme assembla ensemble des
-    morceaux de texte pour réaliser un livre spécimen de polices
-    de texte.`,
+    image: "/img/experiences/sncf.png",
+    title: "Data Analyst",
+    company: "Groupe SNCF",
+    dateFrom: "06/2019",
+    dateTo: "08/2019",
+    city: "Paris",
+    country: "France",
+    tags: ["dax", "power_query_m"],
+    description: `- Stage d'élève ingénieur au sein du Pôle Excellence Opérationnel de la Direction des lignes N&U"
+    - Traiter des données via Power BI pour répondre à des problématiques de production, d’exploitation et de lutte anti-fraude (Langage M Power Query, DAX)
+    - Rédiger de rapports explicatifs assurant la pérennité des travaux réalisés`,
   },
 ];
 
@@ -55,6 +71,10 @@ function Experiences() {
               </div>
               <div className="sub-block block-right">
                 <h2>{elt.title}</h2>
+                <h3>Mars 2021 - Aujourd’hui · 3 ans 4 mois</h3>
+                <h3>
+                  {elt.company} - {elt.city}, {elt.country}
+                </h3>
                 <div className="tags">
                   {elt.tags.map((tag, indexTag) => (
                     <div
@@ -68,7 +88,14 @@ function Experiences() {
                     </div>
                   ))}
                 </div>
-                <p>{elt.description}</p>
+                <p>
+                  {elt.description.split("\n").map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </p>
               </div>
             </div>
           ))}
