@@ -21,9 +21,9 @@ function Skills() {
     <div id="skills" className="app-section">
       <div className="main-block">
         <h1>Boite à outils</h1>
-        <h5>
+        <h3>
           Technologies fréquemment utilisées (triées par niveau de maîtrise)
-        </h5>
+        </h3>
         {Object.keys(parts).map((id) => (
           <div key={id} className="sub-block">
             <h2>{parts[id].title}</h2>

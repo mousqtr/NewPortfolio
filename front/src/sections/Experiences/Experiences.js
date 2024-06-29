@@ -71,7 +71,7 @@ function Experiences() {
     <div id="experiences" className="app-section">
       <div className="main-block">
         <h1>Expériences professionnelles</h1>
-        <h5>Missions réalisées dans le cadre d'un contexte professionel</h5>
+        <h3>Missions réalisées dans le cadre d'un contexte professionel</h3>
         {data
           .sort((a, b) => a.order - b.order)
           .map((elt, index) => (
@@ -81,10 +81,10 @@ function Experiences() {
               </div>
               <div className="sub-block block-right">
                 <h2>{elt.title}</h2>
-                <h3>Mars 2021 - Aujourd’hui · 3 ans 4 mois</h3>
-                <h3>
+                <h4>Mars 2021 - Aujourd’hui · 3 ans 4 mois</h4>
+                <h4>
                   {elt.company} - {elt.city}, {elt.country}
-                </h3>
+                </h4>
                 <div className="tags">
                   {elt.tags.map((tag, indexTag) => (
                     <div

@@ -36,16 +36,16 @@ function Formation() {
     <div id="formation" className="app-section">
       <div className="main-block">
         <h1>Formation</h1>
-        <h5>Parcours dans l'enseignement secondaire et supérieur</h5>
+        <h3>Parcours dans l'enseignement secondaire et supérieur</h3>
         <ul>
           {data.map((formation, index) => (
             <li key={index}>
-              <h4>{formation.type}</h4>
+              <h5>{formation.type}</h5>
               <img src={formation.image} alt="formation-image" />
               <h2>{formation.title}</h2>
-              <h5>
+              <h4>
                 {formation.dateFrom} - {formation.dateTo}
-              </h5>
+              </h4>
               <p>{formation.description}</p>
             </li>
           ))}
