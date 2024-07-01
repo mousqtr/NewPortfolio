@@ -1,4 +1,4 @@
-import { TECHNOLOGIES_BY_FIELD } from "../../constants/technologies";
+import Tag from "../../components/Tag/Tag";
 import "./Projects.scss";
 
 const data = [
@@ -52,15 +52,7 @@ function Projects() {
                 <h2>{elt.title}</h2>
                 <div className="tags">
                   {elt.tags.map((tag, indexTag) => (
-                    <div
-                      key={indexTag}
-                      className="tag"
-                      style={{
-                        backgroundColor: TECHNOLOGIES_BY_FIELD[tag].bgColor,
-                      }}
-                    >
-                      {TECHNOLOGIES_BY_FIELD[tag].label}
-                    </div>
+                    <Tag key={indexTag} tag={tag} />
                   ))}
                 </div>
                 <p>{elt.description}</p>

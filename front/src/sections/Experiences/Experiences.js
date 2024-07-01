@@ -1,5 +1,5 @@
 import React from "react";
-import { TECHNOLOGIES_BY_FIELD } from "../../constants/technologies";
+import Tag from "../../components/Tag/Tag";
 import "./Experiences.scss";
 
 const data = [
@@ -87,15 +87,7 @@ function Experiences() {
                 </h4>
                 <div className="tags">
                   {elt.tags.map((tag, indexTag) => (
-                    <div
-                      key={indexTag}
-                      className="tag"
-                      style={{
-                        backgroundColor: TECHNOLOGIES_BY_FIELD[tag].bgColor,
-                      }}
-                    >
-                      {TECHNOLOGIES_BY_FIELD[tag].label}
-                    </div>
+                    <Tag key={indexTag} tag={tag} />
                   ))}
                 </div>
                 <p>
