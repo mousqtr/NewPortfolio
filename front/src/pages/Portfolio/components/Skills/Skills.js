@@ -1,5 +1,8 @@
 import { useState, useMemo } from "react";
-import { TECHNOLOGIES, TECHNOLOGIES_LIST } from "../../constants/technologies";
+import {
+  TECHNOLOGIES,
+  TECHNOLOGIES_LIST,
+} from "../../../../constants/technologies";
 import "./Skills.scss";
 
 const data = {
