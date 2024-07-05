@@ -26,25 +26,25 @@ function NavbarPortfolio() {
                 href="#skills"
                 onClick={(e) => changePage(e, "", "skills")}
               >
-                Compétences
+                <img src="/icons/tools.png" alt="Compétences" /> Compétences
               </Nav.Link>
               <Nav.Link
                 href="#experiences"
                 onClick={(e) => changePage(e, "", "experiences")}
               >
-                Expériences
+                <img src="/icons/suitcase.png" alt="Expériences" /> Expériences
               </Nav.Link>
               <Nav.Link
                 href="#formation"
                 onClick={(e) => changePage(e, "", "formation")}
               >
-                Formation
+                <img src="/icons/school.png" alt="Formation" /> Formation
               </Nav.Link>
               <Nav.Link
                 href="#projects"
                 onClick={(e) => changePage(e, "", "projects")}
               >
-                Projets
+                <img src="/icons/site.png" alt="Projets" /> Projets
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
