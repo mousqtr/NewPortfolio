@@ -1,12 +1,12 @@
 import Panel from "./components/Panel/Panel";
-import NavBarHome from "./components/NavbarHome/NavbarHome";
+import SummaryHome from "./components/SummaryHome/SummaryHome";
 import "./Home.scss";
 
 function Home() {
   return (
     <div id="home">
       <Panel />
-      <NavBarHome />
+      <SummaryHome />
     </div>
   );
 }

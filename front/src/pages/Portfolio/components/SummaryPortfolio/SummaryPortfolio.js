@@ -1,5 +1,5 @@
 import Summary from "../../../../components/Summary/Summary";
-import "./NavbarPortfolio.scss";
+import "./SummaryPortfolio.scss";
 
 const summary = [
   {
@@ -24,12 +24,12 @@ const summary = [
   },
 ];
 
-function NavbarPortfolio() {
+function SummaryPortfolio() {
   return (
-    <div id="navbarPortfolio">
+    <div id="summaryPortfolio">
       <Summary data={summary} />
     </div>
   );
 }
 
-export default NavbarPortfolio;
+export default SummaryPortfolio;
