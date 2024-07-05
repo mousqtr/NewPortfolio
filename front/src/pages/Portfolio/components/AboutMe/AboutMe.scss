@@ -2,10 +2,10 @@
   .main-block {
     color: black;
     display: flex;
-    margin-top: 20px;
 
     @media (max-width: 720px) {
       flex-direction: column;
+      margin-top: 20px;
     }
 
     @media (min-width: 720px) {

@@ -1,9 +1,14 @@
-// import Presentation from "./../../sections/Presentation/Presentation";
-
+import Panel from "./components/Panel/Panel";
+import NavBarHome from "./components/NavbarHome/NavbarHome";
 import "./Home.scss";
 
 function Home() {
-  return <div id="home"></div>;
+  return (
+    <div id="home">
+      <Panel />
+      <NavBarHome />
+    </div>
+  );
 }
 
 export default Home;

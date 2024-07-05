@@ -1,3 +1,4 @@
+import NavbarPortfolio from "./components/NavbarPortfolio/NavbarPortfolio";
 import Presentation from "./components/Presentation/Presentation";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Skills from "./components/Skills/Skills";
@@ -11,6 +12,7 @@ function Portfolio() {
   return (
     <div id="portfolio">
       <Presentation />
+      <NavbarPortfolio />
       <AboutMe />
       <Skills />
       <Experiences />

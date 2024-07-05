@@ -1,13 +1,11 @@
-#navBar {
-  position: fixed;
+#navbarHome {
   width: 100%;
-  top: 0;
-  z-index: 100;
+  z-index: 10;
 
   .navbar {
     background-color: white;
     color: black;
-    box-shadow: 1px 1px 7px lightgrey;
+    box-shadow: 1px 4px 3px -4px #000000;
 
     .container {
       max-width: 1100px;
@@ -53,11 +51,6 @@
         &:hover {
           opacity: 0.6;
         }
-      }
-
-      .ms-auto {
-        display: flex;
-        flex-direction: row;
       }
     }
   }

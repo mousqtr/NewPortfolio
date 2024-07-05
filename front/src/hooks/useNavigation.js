@@ -23,10 +23,12 @@ export function useNavigation() {
   const changePage = useCallback(
     (pEvent, pPage, pSection = "") => {
       pEvent.preventDefault();
-      navigate(pPage);
+      if (pPage !== "") {
+        navigate(pPage);
+      }
       scrollToSection(pSection);
     },
-    [navigate, scrollToSection],
+    [navigate, scrollToSection]
   );
 
   return { changePage };
