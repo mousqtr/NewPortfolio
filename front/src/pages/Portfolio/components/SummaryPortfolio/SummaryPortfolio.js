@@ -3,7 +3,12 @@ import "./SummaryPortfolio.scss";
 
 const summary = [
   {
-    id: "tools",
+    id: "aboutMe",
+    label: "Profil",
+    img: "/icons/profil.png",
+  },
+  {
+    id: "skills",
     label: "Compétences",
     img: "/icons/tools.png",
   },

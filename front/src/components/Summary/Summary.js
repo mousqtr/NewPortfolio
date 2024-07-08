@@ -23,8 +23,8 @@ function Summary({ data }) {
             <Nav>
               {data.map((element) => (
                 <Nav.Link
-                  href={"#" + element}
-                  onClick={(e) => changePage(e, "", element)}
+                  href={"#" + element.id}
+                  onClick={(e) => changePage(e, "", element.id)}
                 >
                   <img src={element.img} alt={element.label} />
                   {element.label}
